@@ -1,0 +1,596 @@
+{
+	"info": {
+		"_postman_id": "ea86e194-0ac8-4d21-adf0-6c0538b6a762",
+		"name": "E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14321078"
+	},
+	"item": [
+		{
+			"name": "product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "itemCode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "plainColor",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "pattern",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "figure",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "size",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-limits-10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist/qty?limits=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-limits-20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist/qty?limits=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-limits-50",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist/qty?limits=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product-page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/product/productlist/page?limits=10&page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"product",
+						"productlist",
+						"page"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "10"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orderNumber",
+							"value": "202200002",
+							"type": "text"
+						},
+						{
+							"key": "orderDate",
+							"value": "2022-05-28",
+							"type": "text"
+						},
+						{
+							"key": "itemCode",
+							"value": "P0089",
+							"type": "text"
+						},
+						{
+							"key": "qtyItem",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/order/ordertlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"order",
+						"ordertlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/order/ordertlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"order",
+						"ordertlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shipping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orderNumber",
+							"value": "202200007",
+							"type": "text"
+						},
+						{
+							"key": "shipAddress",
+							"value": "1234/1",
+							"type": "text"
+						},
+						{
+							"key": "shipProvince",
+							"value": "Phra Nakhon Si Ayutthaya",
+							"type": "text"
+						},
+						{
+							"key": "shipDistrict",
+							"value": "Bang pa-in",
+							"type": "text"
+						},
+						{
+							"key": "shipPostal",
+							"value": "13180",
+							"type": "text"
+						},
+						{
+							"key": "totalPrice",
+							"value": "199",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/order/shipping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"order",
+						"shipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shipping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/order/shipping",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"order",
+						"shipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orderNumber",
+							"value": "202200007",
+							"type": "text"
+						},
+						{
+							"key": "payStatus",
+							"value": "confirm",
+							"type": "text"
+						},
+						{
+							"key": "payDate",
+							"value": "2022-05-29",
+							"type": "text"
+						},
+						{
+							"key": "confirmDate",
+							"value": "2022-05-30",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-datetodate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/paydate?startDate=2022-05-27&endDate=2022-05-29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"paydate"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-05-27"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-05-29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-limits-10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/qty?limits=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-limits-20",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/qty?limits=20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-limits-50",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/qty?limits=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"qty"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/page?limits=2&page=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"page"
+					],
+					"query": [
+						{
+							"key": "limits",
+							"value": "2"
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "payment-status",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "payStatus",
+							"value": "waiting",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:2005/api/payment/payment/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2005",
+					"path": [
+						"api",
+						"payment",
+						"payment",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
